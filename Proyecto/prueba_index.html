@@ -1,0 +1,120 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<title>Proyecto_Animales</title>
+<link href="jquery-mobile/jquery.mobile.theme-1.0.min.css" rel="stylesheet" type="text/css"/>
+<link href="jquery-mobile/jquery.mobile.structure-1.0.min.css" rel="stylesheet" type="text/css"/>
+<script src="jquery-mobile/jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="jquery-mobile/jquery.mobile-1.0.min.js" type="text/javascript"></script>
+<script src="jquery-mobile/acciones.js" type="text/javascript"></script>
+<script src="phonegap.js"></script>
+<style>
+#principal{
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%;
+	background-color:#3F3;
+}
+#pantalla{
+	float:left;
+	width:100%;
+	height:25%;
+	background:#09F;
+	text-align:center;
+	font-size:4em;
+	font-weight:bold;
+	font-family:Verdana, Geneva, sans-serif;
+}
+#teclado{
+	float:left;
+	width:100%;
+	height:75%;
+}
+.nota {
+	position:relative;
+	float:left;
+	height:90%;
+	outline:#000 solid 1px;
+	background:#639;
+	width:14.28571428571429%;
+}
+.textonota{
+	position:relative;
+	top:80%;
+	text-align:center;
+	font-size:2em;
+	font-weight:bold;
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	color:#00F;
+}
+.tocada{
+	color:#300;
+	background:#F00;
+	outline:solid 1px #FF0000;
+}
+</style>
+</head> 
+<body> 
+
+<div data-role="page" id="page" data-theme="e">
+	<div data-role="header">
+		<h1>Animales Domesicos y Salvajes </h1>
+	</div>
+	<div data-role="content">	
+		<ul data-role="listview">
+        <div align="center">  </div>
+         <div align="center" data-role="controlgroup" data-type="vertical">
+             <div style="width:50%">
+			<a href="#page2" data-role="button" id="bot1_AD">
+            Animales Domesticos
+            </a>
+            <br>
+            <br>
+            <a href="#page3" data-role="button" id="bot2_AS">
+            Animales Salvajes
+            </a>
+			
+		</ul>		
+	</div>
+	<div data-role="footer">
+		<h4># C.B.T.i.s Sitios Moviles</h4>
+	</div>
+</div>
+
+<div data-role="page" id="page2" data-add-back-btn="true" >
+<div id="principal">
+    
+
+	<div data-role="header">
+		<h1>Animales Domesticos</h1>
+	</div>
+	<div data-role="content">	
+		Contenido		
+	</div>
+	<div data-role="footer">
+		<h4>Mayte López Montes</h4>
+	</div>
+</div>
+</div>
+<div data-role="page" id="page3" data-add-back-btn="true">
+<div id="principal">
+
+	<div data-role="header">
+    
+		<h1>Animales Salvajes</h1>
+	</div>
+    
+	<div data-role="content">	
+		Contenido		
+	</div>
+	<div data-role="footer">
+		<h4>Mayte López Montes</h4>
+	</div>
+</div>
+</div>
+
+
+</body>
+</html>

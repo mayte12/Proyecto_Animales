@@ -1,0 +1,208 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<title>Proyecto_Animales</title>
+<link href="jquery-mobile/jquery.mobile.theme-1.0.min.css" rel="stylesheet" type="text/css"/>
+<link href="jquery-mobile/jquery.mobile.structure-1.0.min.css" rel="stylesheet" type="text/css"/>
+<script src="jquery-mobile/jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="jquery-mobile/jquery.mobile-1.0.min.js" type="text/javascript"></script>
+<script src="jquery-mobile/acciones.js" type="text/javascript"></script>
+<script src="phonegap.js"></script>
+<style>
+#principal{
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%;
+	background-image:url(Imagenes/Dise%C3%B1o/fondo2.jpg);
+	
+}
+.subtitulo2 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 24px;
+	font-style: oblique;
+	font-weight: bold;
+	color: #FFF;
+}
+#pantalla{
+	float:left;
+	width:100%;
+	height:9%;
+	background-image:url(Imagenes/Dise%C3%B1o/fondo1.jpg);
+	text-align:center;
+	font-size:3em;
+	font-weight:bold;
+	font-family:Arial, Helvetica, sans-serif;
+}
+#pantalla1{
+	float:left;
+	width:100%;
+	height:15%;
+	background-image:url(Imagenes/Dise%C3%B1o/fondo1.jpg);
+	
+	text-align:center;
+	font-size:3em;
+	font-weight:bold;
+	font-family:Arial, Helvetica, sans-serif;
+}
+.Subtitulo {
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 24px;
+	font-style: oblique;
+	font-weight: bold;
+	color: #3C0;
+}
+#teclado{
+	float:left;
+	width:100%;
+	
+	
+	
+}
+.nota {
+	position:relative;
+	float:left;
+	margin-top:50px; 
+	background:#3F3;
+	background-image:url(Imagenes/Dise%C3%B1o/fondo2.jpg);
+	width:50%;
+}
+.textonota{
+	position:relative;
+	top:80%;
+	text-align:center;
+	font-size:2em;
+	font-weight:bold;
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	color:#00F;
+}
+.Titulo {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 36px;
+	font-style: oblique;
+	font-weight: bold;
+	color: #CCC;
+}
+.tocada{
+	color:#300;
+	background:#F00;
+	outline:solid 1px #FF0000;
+}
+</style>
+</head> 
+<body> 
+
+<div data-role="page" id="page" data-theme="e"  >
+	<div data-role="header" style="background-image:url(Imagenes/Dise%C3%B1o/fondo2.jpg);">
+		<h1><div class="Titulo">Los Animales </h1>
+	</div>
+	<div data-role="content" style=" background-image:url(Imagenes/Dise%C3%B1o/fondo1.jpg)">	
+		<ul data-role="listview">
+        <br>
+         <div align="center"><div class="Subtitulo">  Elija Un Tipo </div>
+         <div align="center" data-role="controlgroup" data-type="vertical">
+             <div style="width:50%">
+			<a href="#page2" data-role="button" id="bot1_AD">
+            Animales Domesticos
+            </a>
+            </div>
+            </div>
+            <div align="center" data-role="controlgroup" data-type="vertical">
+             <div style="width:50%">
+            
+            <a href="#page3" data-role="button" id="bot2_AS">
+            Animales Salvajes
+            </a>
+            </div>
+            </div>
+			
+		</ul>		
+	</div>
+	<div data-role="footer" style="background-image:url(Imagenes/Dise%C3%B1o/fondo2.jpg);" >
+		<h4><div class="subtitulo2">#C.B.T.i.s 86 Sitios Moviles </h4>
+	</div>
+</div>
+
+<div data-role="page" id="page2" data-add-back-btn="true" data-back-btn-theme="e" data-back-btn-text="Regresar">
+<div id="principal">
+   <div data-role="header" id="pantalla">
+    Animales Domesticos
+    </div>
+	<div id="teclado">
+    <div id="perro" class="nota">
+     <div align="center"><img src="Imagenes1/Perro.png" alt="perro" name="perro" height="300px" width="80%" id="perro"> 
+      </div>
+      </div>
+    <div id="gato" class="nota">
+      <div align="center"><img src="Imagenes/Animal_Domes/Img2_Gato.jpg"  height="300px" width="80%" alt="gato"> 
+      </div>
+      </div>
+    <div id="vaca" class="nota">
+      <div align="center"><img src="Imagenes1/vaca.png" height="300px" width="80%"  alt="vaca">
+      </div>
+      </div>
+    <div id="gallina" class="nota">
+      <div align="center"><img src="Imagenes/Animal_Domes/Img4_Gallina.jpg" height="300px" width="80%"  alt="gallina">
+      </div>
+      </div>
+    <div id="caballo" class="nota">
+     <div align="center"> <img src="Imagenes/Animal_Domes/Img5_Caballo.jpg" height="300px" width="80%" alt="caballo">
+       </div>
+       </div>
+   
+    <div id="conejo" class="nota">
+     <div align="center"> <img src="Imagenes/Animal_Domes/Img6_Conejo.jpg" height="300px" width="80%"  alt="conejo">
+       </div>
+       </div>
+	
+	</div>
+   
+	<div data-role="footer">
+	  <h4><div class="subtitulo2">Mayte López Montes</h4>
+	</div>
+</div>
+  </div>
+ 
+<div data-role="page" id="page3" data-add-back-btn="true" data-back-btn-theme="e" data-back-btn-text="Regresar">
+	<div id="principal">
+   <div data-role="header" id="pantalla1">
+    Animales Salvajes
+    </div>
+	<div id="teclado">
+    <div id="leon" class="nota">
+      <div align="center"><img src="Imagenes/Animal_Salvaj/Img1_Leon.jpg" height="300px" width="80%"  alt="leon"></div> 
+      </div>
+    <div id="elefante" class="nota">
+       <div align="center"><img src="Imagenes/Animal_Salvaj/Img2_Elefant.jpg" height="300px" width="80%"  alt="elefante"> 
+       </div>
+      </div>
+    <div id="mono" class="nota">
+      <div align="center"> <img src="Imagenes/Animal_Salvaj/Img3_Mono.jpg" height="300px" width="80%"  alt="mono">
+       </div>
+       </div>
+    <div id="oso" class="nota">
+      <div align="center"> <img src="Imagenes/Animal_Salvaj/Img4_Oso.jpg" height="300px" width="80%"  alt="oso"> 
+      </div>
+      </div>
+    <div id="cebra" class="nota">
+       <div align="center"><img src="Imagenes/Animal_Salvaj/Img5_Cebra.jpg" height="300px" width="80%" alt="cebra">
+       </div>
+       </div>
+    <div id="cocodrilo" class="nota">
+       <div align="center"><img src="Imagenes/Animal_Salvaj/Img6_Cocodrilo.jpg" height="300px" width="80%" alt="cocodrilo">
+       </div>
+       </div>
+   
+	</div>
+   
+	<div data-role="footer">
+		<h4><div class="subtitulo2">Mayte López Montes </h4>
+	</div>
+</div>
+ </div>
+    </div>
+
+
+</body>
+</html>
